@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Livros</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+        <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cadastro de Livros</h1>
+            <form class="mt-3 mb-2">
+                <label form="nome">Nome </label>
+                <input class="form-control" type="text" name="nome" id='nome' placeholder="Digite o nome do livro"> <br>
+                <label for="autor">Autor </label>
+                <input class="form-control" type="text" name="autor" id='autor' placeholder="Digite o nome do autor"> <br>
+                <label for="editora">Editora </label>
+                <input class="form-control" type="text" name="editora" id='editora' placeholder="Digite o nome da editora"> <br>
+    
+                <button class="btn btn-primary mt-2" type="submit" name="action" value="Cadastrar"
+                formaction="http://localhost:8080/livro/add" formmethod="POST">
+                Salvar </button> 
+
+            </form>
+            <a class="btn btn-info" href ="http://localhost:8080/livro/all"> Ver todos os livros</a>
+        </div>
+    </body>
+</html>
